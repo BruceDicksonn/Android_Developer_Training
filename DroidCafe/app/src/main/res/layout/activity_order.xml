@@ -78,10 +78,17 @@
 
         <EditText
             android:id="@+id/phone"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="phone" />
+
+        <Spinner
+            android:id="@+id/label_spinner"
+            android:entries="@array/spinner_options"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
     </LinearLayout>
 
     <LinearLayout
@@ -124,26 +131,31 @@
 
         <RadioGroup
             android:id="@+id/radioGroupMethods"
+            android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
             <RadioButton
+                android:onClick="onRadioButtonClicked"
                 android:id="@+id/method_sameDay"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Same day messenger service" />
+                android:checked="true"
+                android:text="@string/same_day_messenger_service" />
 
             <RadioButton
+                android:onClick="onRadioButtonClicked"
                 android:id="@+id/method_nextDay"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Next day ground delivery" />
+                android:text="@string/next_day_ground_delivery" />
 
             <RadioButton
+                android:onClick="onRadioButtonClicked"
                 android:id="@+id/method_pickup"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Pick up" />
+                android:text="@string/pick_up" />
 
         </RadioGroup>
 
