@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">HelloCompat</string>
+    <string name="button_change">Change Color</string>
+    <string name="teste">Esta mensagem foi capturada de string resources</string>
+</resources>
