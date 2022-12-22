@@ -83,8 +83,24 @@ public class MainActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
+        if (id == R.id.action_order) {
+
+            Intent intent = new Intent(MainActivity.this, OrderActivity.class);
+            intent.putExtra(EXTRA_MESSAGE, mOrderMessage);
+            startActivity(intent);
+
+        } else if(id == R.id.action_status) {
+
+            alert(getString(R.string.action_status_message));
+
+        } else if(id == R.id.action_favorites){
+
+            alert(getString(R.string.action_favorites_message));
+
+        } else {
+
+            alert(getString(R.string.action_contact_message));
+            
         }
 
         return super.onOptionsItemSelected(item);
