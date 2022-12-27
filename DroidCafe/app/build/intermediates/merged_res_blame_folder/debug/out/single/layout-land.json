@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "com.example.droidcafe.app-mergeDebugResources-16:/layout-land/content_main.xml",
+        "source": "com.example.droidcafe.app-main-19:/layout-land/content_main.xml"
+    },
+    {
+        "merged": "com.example.droidcafe.app-mergeDebugResources-16:/layout-land/fragment_first.xml",
+        "source": "com.example.droidcafe.app-main-19:/layout-land/fragment_first.xml"
+    }
+]
