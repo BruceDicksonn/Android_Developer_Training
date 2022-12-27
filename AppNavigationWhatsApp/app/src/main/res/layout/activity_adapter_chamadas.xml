@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    tools:context=".AdapterChamadas">
+
+    <ImageView
+        android:id="@+id/fotoContato"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:padding="10dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/ic_person"
+    />
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_toEndOf="@id/fotoContato"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/nomeContato"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:textSize="18sp"
+            android:text="Nome contato"/>
+
+        <TextView
+            android:id="@+id/numeroContato"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="+55 98 9559-7845"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
