@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/boliveira/Android_Developer_Training/Teste/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1025" />
+        <entry key="..\:/Users/boliveira/Android_Developer_Training/Teste/app/src/main/res/drawable/ic_camera.xml" value="0.1025" />
+        <entry key="..\:/Users/boliveira/Android_Developer_Training/Teste/app/src/main/res/drawable/ic_image.xml" value="0.1025" />
+        <entry key="..\:/Users/boliveira/Android_Developer_Training/Teste/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1025" />
+        <entry key="..\:/Users/boliveira/Android_Developer_Training/Teste/app/src/main/res/drawable/ic_phone.xml" value="0.1025" />
+        <entry key="..\:/Users/boliveira/Android_Developer_Training/Teste/app/src/main/res/layout/activity_adapter_chamadas.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/boliveira/Android_Developer_Training/Teste/app/src/main/res/layout/activity_main.xml" value="0.19010416666666666" />
+        <entry key="..\:/Users/boliveira/Android_Developer_Training/Teste/app/src/main/res/layout/tab_camera.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/boliveira/Android_Developer_Training/Teste/app/src/main/res/layout/tab_chamadas.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/boliveira/Android_Developer_Training/Teste/app/src/main/res/layout/tab_configuracoes.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/boliveira/Android_Developer_Training/Teste/app/src/main/res/layout/tab_conversas.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/boliveira/Android_Developer_Training/Teste/app/src/main/res/layout/tab_status.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/boliveira/Android_Developer_Training/Teste/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1025" />
+        <entry key="..\:/Users/boliveira/Android_Developer_Training/Teste/app/src/main/res/xml/file_paths.xml" value="0.20416666666666666" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
