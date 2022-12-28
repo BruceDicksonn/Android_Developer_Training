@@ -1,3 +1,4 @@
+<<<<<<<< HEAD:AppHelloToast_Constraint_Layout/.idea/gradle.xml
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="GradleMigrationSettings" migrationVersion="1" />
@@ -16,4 +17,25 @@
       </GradleProjectSettings>
     </option>
   </component>
+========
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleJvm" value="11" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/app" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+>>>>>>>> 74b380f960b3d694dc3cb5a6ca7ab9a514dfab0c:AppDialogForAlert/.idea/gradle.xml
 </project>

@@ -1,6 +1,14 @@
+<<<<<<<< HEAD:AppHelloToast_Constraint_Layout/.idea/compiler.xml
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel target="11" />
   </component>
+========
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel target="1.8" />
+  </component>
+>>>>>>>> 74b380f960b3d694dc3cb5a6ca7ab9a514dfab0c:AppNavigationTabExperiment0/.idea/compiler.xml
 </project>
