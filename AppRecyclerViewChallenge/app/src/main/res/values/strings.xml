@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Receitas Culinárias</string>
+    <string name="toolbar_subtitle">Receitas disponíveis</string>
+</resources>
