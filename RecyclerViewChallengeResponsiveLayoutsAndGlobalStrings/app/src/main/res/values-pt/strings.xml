@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="words">
+        <item>Palavra0</item>
+        <item>Palavra1</item>
+        <item>Palavra2</item>
+        <item>Palavra3</item>
+        <item>Palavra4</item>
+        <item>Palavra5</item>
+        <item>Palavra6</item>
+        <item>Palavra7</item>
+        <item>Palavra8</item>
+        <item>Palavra9</item>
+        <item>Palavra10</item>
+        <item>Palavra11</item>
+        <item>Palavra12</item>
+        <item>Palavra13</item>
+        <item>Palavra14</item>
+        <item>Palavra15</item>
+        <item>Palavra16</item>
+        <item>Palavra17</item>
+        <item>Palavra18</item>
+        <item>Palavra19</item>
+        <item>Palavra20</item>
+    </string-array>
+</resources>

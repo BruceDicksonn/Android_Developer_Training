@@ -1,14 +1,15 @@
 package com.example.apprecyclerviewchallenge.adapter;
 
 import android.content.Context;
-import android.support.annotation.NonNull;
-import android.support.v7.widget.RecyclerView;
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.example.apprecyclerviewchallenge.R;
 import com.example.apprecyclerviewchallenge.model.Recipe;
 
@@ -34,7 +35,8 @@ public class AdapterCookingRecipe extends RecyclerView.Adapter<AdapterCookingRec
     @Override
     public void onBindViewHolder(@NonNull ViewHolder viewHolder, int i) {
 
-        viewHolder.image.setImageBitmap(mRecipe.getImage());
+        //viewHolder.image.setImageBitmap(mRecipe.getImage());
+        Glide.with(context).load(mRecipe.getImage()).into(viewHolder.image);
         viewHolder.ingredients.setText(concatArrayString(mRecipe.getIngredients()));
         viewHolder.procedures.setText(concatArrayString(mRecipe.getProcedures()));
 

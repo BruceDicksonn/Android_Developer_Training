@@ -1,9 +1,8 @@
 package com.example.apprecyclerviewchallenge.utils;
 
 import android.content.res.Resources;
-import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.apprecyclerviewchallenge.R;
 import com.example.apprecyclerviewchallenge.model.Recipe;

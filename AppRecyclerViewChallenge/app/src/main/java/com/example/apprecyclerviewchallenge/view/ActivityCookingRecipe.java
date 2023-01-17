@@ -1,12 +1,10 @@
 package com.example.apprecyclerviewchallenge.view;
 
-import android.graphics.Color;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.apprecyclerviewchallenge.R;
 import com.example.apprecyclerviewchallenge.adapter.AdapterCookingRecipe;
 import com.example.apprecyclerviewchallenge.databinding.ActivityCookingRecipeBinding;
 import com.example.apprecyclerviewchallenge.model.Recipe;

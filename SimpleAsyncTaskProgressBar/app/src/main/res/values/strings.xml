@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">SimpleAsyncTaskProgressBar</string>
+    <string name="text">Waiting start task...</string>
+    <string name="button_text">Start Task</string>
+</resources>

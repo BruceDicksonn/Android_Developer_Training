@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">RecyclerViewChallengeResponsiveLayoutsAndGlobalStrings</string>
+    <string name="word_adapter">Word0</string>
+
+    <string-array name="words">
+        <item>Word0</item>
+        <item>Word1</item>
+        <item>Word2</item>
+        <item>Word3</item>
+        <item>Word4</item>
+        <item>Word5</item>
+        <item>Word6</item>
+        <item>Word7</item>
+        <item>Word8</item>
+        <item>Word9</item>
+        <item>Word10</item>
+        <item>Word11</item>
+        <item>Word12</item>
+        <item>Word13</item>
+        <item>Word14</item>
+        <item>Word15</item>
+        <item>Word16</item>
+        <item>Word17</item>
+        <item>Word18</item>
+        <item>Word19</item>
+        <item>Word20</item>
+    </string-array>
+
+</resources>
