@@ -1,0 +1,76 @@
+{
+  "project_info": {
+    "project_number": "783844731936",
+    "project_id": "app-login-firebase-3fa5c",
+    "storage_bucket": "app-login-firebase-3fa5c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:783844731936:android:3147591bab576d6f6aa045",
+        "android_client_info": {
+          "package_name": "com.example.apploginfirebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "783844731936-ob86f74j9relidcela82akugtrgdrfic.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSWNv2O7xWUDNjcDTbmnFRxAm3XMBCX4M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "783844731936-ob86f74j9relidcela82akugtrgdrfic.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:783844731936:android:7b2d653d263888406aa045",
+        "android_client_info": {
+          "package_name": "com.example.apploginfirebase2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "783844731936-1c0309e37n5jcmab8qlp88v3479lpn3m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.apploginfirebase2",
+            "certificate_hash": "16d752342fb323b75dceba1e920f9a09ff864863"
+          }
+        },
+        {
+          "client_id": "783844731936-ob86f74j9relidcela82akugtrgdrfic.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSWNv2O7xWUDNjcDTbmnFRxAm3XMBCX4M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "783844731936-ob86f74j9relidcela82akugtrgdrfic.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

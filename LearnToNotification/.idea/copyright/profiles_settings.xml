@@ -1,0 +1,14 @@
+<component name="CopyrightManager">
+  <settings default="Bruce Dickson">
+    <module2copyright>
+      <element module="Project Files" copyright="Bruce Dickson" />
+    </module2copyright>
+    <LanguageOptions name="JAVA">
+      <option name="fileLocation" value="3" />
+    </LanguageOptions>
+    <LanguageOptions name="__TEMPLATE__">
+      <option name="relativeBefore" value="false" />
+      <option name="addBlankBefore" value="true" />
+    </LanguageOptions>
+  </settings>
+</component>

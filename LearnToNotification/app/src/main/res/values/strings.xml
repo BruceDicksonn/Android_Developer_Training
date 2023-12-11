@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">LearnToBroadcastPowerEnergy</string>
+    <string name="eco_energy_notification">com.example.learntobroadcastpowerenergy.ECO_ENERGY_NOTIFICATION</string>
+</resources>
