@@ -51,20 +51,10 @@ public class PowerSaveModeReceiver extends BroadcastReceiver {
 
         if(alertDialog == null && notification != null) {
 
-            alertDialog = Utils.createDialog(
-                    context,
-                    notification.getContentTitle(),
-                    notification.getContentTitle(),
-                    "Ir p/ configurações",
-                    (dialogInterface,i) -> {
-                        Intent intent = new Intent(Settings.ACTION_BATTERY_SAVER_SETTINGS);
-                        context.startActivity(intent);
-                    }
-            );
-
+            alertDialog = Utils.createDialogEcoEnergyMode(context);
             alertDialog.show();
-            return;
 
+            return;
         }
 
         alertDialog.show();

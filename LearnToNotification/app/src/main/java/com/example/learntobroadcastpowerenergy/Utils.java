@@ -5,8 +5,10 @@ package com.example.learntobroadcastpowerenergy;
 
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Build;
 import android.os.PowerManager;
+import android.provider.Settings;
 import android.support.v7.app.AlertDialog;
 
 public class Utils {
@@ -33,6 +35,22 @@ public class Utils {
                     .create();
 
             return alertDialog;
+    }
+
+    public static AlertDialog createDialogEcoEnergyMode(Context context) {
+        AlertDialog alertDialog = new AlertDialog
+                .Builder(context)
+                .setTitle("Economia de energia")
+                .setMessage("A economia de energia impacta em alguns recursos, desative-a.")
+                .setCancelable(false)
+                .setPositiveButton("Ir p/ configurações", (dialogInterface,i) -> {
+                    Intent intent = new Intent(Settings.ACTION_BATTERY_SAVER_SETTINGS);
+                    context.startActivity(intent);
+                })
+                .create();
+
+        alertDialog.show();
+        return alertDialog;
     }
 
 }

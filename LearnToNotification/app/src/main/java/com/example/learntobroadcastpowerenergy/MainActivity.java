@@ -29,7 +29,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
         if(Utils.checkEcoEnergyMode(this)){
-            // ...aplique sua logica aqui
+            NotificationHelper helper = new NotificationHelper(this);
+            helper.showNotification(NotificationHelper.EnumNotifications.ECO_ENERGY_MODE);
+            Utils.createDialogEcoEnergyMode(this);
         }
     }
 
