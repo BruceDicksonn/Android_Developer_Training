@@ -8,6 +8,8 @@ import android.content.Intent;
 import android.os.Build;
 import android.support.annotation.RequiresApi;
 import android.support.v4.app.NotificationCompat;
+import android.widget.RemoteViews;
+
 import java.util.ArrayList;
 
 /*
@@ -65,20 +67,25 @@ public class NotificationHelper {
             Intent intent = new Intent( context, MainActivity.class );
             PendingIntent pendingIntent = PendingIntent.getActivity(context, requestCode, intent, PendingIntent.FLAG_UPDATE_CURRENT);
 
+            RemoteViews customView =  new RemoteViews(context.getPackageName(), R.layout.custom_notification);
+            customView.setTextViewText(R.id.custom_notification_title, item.title);
+            customView.setTextViewText(R.id.custom_notification_content, item.content);
+
             MyNotification notification = (MyNotification) new MyNotification(context, requestCode , item.title, item.content)
                     .setSmallIcon(android.R.drawable.ic_dialog_info) /** escolha o icone que preferir aqui **/
-                    .setContentTitle( item.title )
+//                    .setContentTitle( item.title )
                     .setContentIntent( pendingIntent )
+                    .setContent( customView )
                     .setPriority( NotificationCompat.PRIORITY_HIGH )
-                    .setAutoCancel(true) /** cancela a notificação ao clicar */
-                    .setOngoing(true); /** não permite que o usuario feche a notificação **/
+                    .setAutoCancel(false) /** cancela a notificação ao clicar */
+                    .setOngoing(false); /** não permite que o usuario feche a notificação **/
 
             /** estiliza a notificação para que seja possivel expandí-la e visualizar o conteúdo completo da mensagem **/
             NotificationCompat.BigTextStyle bigTextStyle = new NotificationCompat.BigTextStyle();
             bigTextStyle.setBigContentTitle( notification.getContentTitle() );
             bigTextStyle.bigText( notification.getContentMessage() );
 
-            notification.setStyle(bigTextStyle);
+//            notification.setStyle(bigTextStyle);
 
             listNotifications.add( notification );
         }
