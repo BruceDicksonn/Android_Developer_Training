@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">TesteLayout</string>
+
+
+    <string-array name="valores">
+        <item>ITEM 100000000</item>
+        <item>ITEM 100000000</item>
+        <item>ITEM 100000000</item>
+        <item>ITEM 100000000</item>
+        <item>ITEM 100000000</item>
+        <item>ITEM 100000000</item>
+        <item>ITEM 100000000</item>
+        <item>ITEM 100000000</item>
+        <item>ITEM 100000000</item>
+        <item>ITEM 100000000</item>
+        <item>ITEM 100000000</item>
+        <item>ITEM 100000000</item>
+        <item>ITEM 100000000</item>
+        <item>ITEM 100000000</item>
+        <item>ITEM 100000000</item>
+        <item>ITEM 100000000</item>
+        <item>ITEM 100000000</item>
+        <item>ITEM 100000000</item>
+        <item>ITEM 100000000</item>
+        <item>ITEM 100000000</item>
+        <item>ITEM 100000000</item>
+        <item>ITEM 100000000</item>
+        <item>ITEM 100000000</item>
+        <item>ITEM 100000000</item>
+        <item>ITEM 100000000</item>
+        <item>ITEM 100000000</item>
+        <item>ITEM 100000000</item>
+        <item>ITEM 100000000</item>
+        <item>ITEM 100000000</item>
+        <item>ITEM 100000000</item>
+        <item>ITEM 100000000</item>
+        <item>ITEM 100000000</item>
+    </string-array>
+
+</resources>

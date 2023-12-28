@@ -1,0 +1,2615 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding = "@dimen/abc_action_bar_content_inset_material"
+        android:background="@android:color/white" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:background="#174c83"
+            android:gravity="center"
+            android:minWidth="30px"
+            android:minHeight="30px"
+            android:text="CLIENTE"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <TableLayout
+            android:gravity = "center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:text = "CPF:"
+                    android:textSize="14dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="30px"
+                    android:minHeight="30px" />
+
+                <EditText
+                    android:inputType="text"
+                    android:hint = "000.000.000-00"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="#000000"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:paddingLeft="5dp"
+                    android:id="@+id/editTextCPF" />
+            </TableRow>
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:text = "Nome:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:minWidth="30px"
+                    android:minHeight="30px"
+                    android:id="@+id/textViewNome" />
+                <EditText
+                    android:inputType= "text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:layout_weight="1"
+                    android:textSize="14dp"
+                    android:paddingLeft="5dp"
+                    android:id="@+id/editTextNOME" />
+
+            </TableRow>
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:text = "Cadastro:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:minWidth="30px"
+                    android:minHeight="30px"
+                    android:id="@+id/textViewTipoCadastro" />
+
+                <Spinner
+                    android:id="@+id/spinnerTipoCadastro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="14dp" />
+            </TableRow>
+
+            <TextView
+                android:text = "DADOS PESSOAIS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minWidth="30px"
+                android:minHeight="30px"
+                android:padding="4dp"
+
+
+                android:gravity = "center"
+                android:textSize = "20sp"
+                android:background="#174c83"
+                android:textColor="@android:color/white"/>
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:text = "Apelido:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:minWidth="30px"
+                    android:minHeight="30px"
+                    android:id="@+id/textViewAPELIDO" />
+                <EditText
+                    android:inputType= "text"
+                    android:textSize="14dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/editTextAPELIDO" />
+            </TableRow>
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:text = "Endereço:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:minWidth="30px"
+                    android:minHeight="30px"
+                    android:id="@+id/textViewEndereco" />
+                <EditText
+                    android:inputType= "text"
+                    android:textSize="14dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/editTextENDERECO" />
+            </TableRow>
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:text="Cidade:"
+                    android:textSize="14dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textViewCidade" />
+
+                <AutoCompleteTextView
+                    android:textSize="14dp"
+                    android:id="@+id/autoCompleteTextViewCidade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:completionThreshold="1" />
+            </TableRow>
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:text="Bairro:"
+                    android:textSize="14dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textViewBairro" />
+                <AutoCompleteTextView
+                    android:textSize="14dp"
+                    android:id="@+id/autoCompleteTextViewBairro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:completionThreshold="1" />
+            </TableRow>
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:text = "CEP:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:minWidth="30px"
+                    android:minHeight="30px"
+                    android:id="@+id/textViewCEP" />
+                <EditText
+                    android:inputType= "text"
+                    android:hint = "00000000"
+                    android:textSize="14dp"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editTextCEP" />
+            </TableRow>
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:text = "Linha Onibus:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:minWidth="30px"
+                    android:minHeight="30px"
+                    android:id="@+id/textViewONIBUSLINHA" />
+                <EditText
+                    android:inputType= "text"
+                    android:textSize="14dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/editTextONIBUSLINHA" />
+            </TableRow>
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:text = "Parada Onibus:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:minWidth="30px"
+                    android:minHeight="30px"
+                    android:id="@+id/textViewONIBUSPARADA" />
+                <EditText
+                    android:inputType= "text"
+                    android:textSize="14dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/editTextONIBUSPARADA" />
+            </TableRow>
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:text = "Ponto Ref:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:minWidth="30px"
+                    android:minHeight="30px"
+                    android:id="@+id/textViewPONTOREF" />
+                <EditText
+                    android:inputType= "text"
+                    android:textSize="14dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/editTextPONTOREF" />
+            </TableRow>
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text = "Data Nasc.:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:minWidth="30px"
+                    android:minHeight="30px"
+                    android:id="@+id/textView1" />
+                <EditText
+                    android:inputType= "text"
+                    android:textSize="14dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/editTextDTNASC"
+                    android:layout_column="1" />
+            </TableRow>
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textViewSEXO"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="30px"
+                    android:minHeight="30px"
+                    android:text="Sexo:"
+                    android:textSize="14dp" />
+
+                <Spinner
+                    android:id="@+id/spinnerSEXO"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="14dp" />
+            </TableRow>
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textViewRG"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="30px"
+                    android:minHeight="30px"
+                    android:text="RG:"
+                    android:textSize="14dp" />
+                <EditText
+                    android:inputType= "text"
+                    android:textSize="14dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/editTextRG" />
+            </TableRow>
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textViewRGEMISSOR"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="30px"
+                    android:minHeight="30px"
+                    android:text="RG Emissor:"
+                    android:textSize="14dp" />
+                <EditText
+                    android:inputType= "text"
+                    android:textSize="14dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/editTextRGEMISSOR" />
+            </TableRow>
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textViewFONE"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="30px"
+                    android:minHeight="30px"
+                    android:text="Fone:"
+                    android:textSize="14dp" />
+                <EditText
+                    android:inputType= "text"
+                    android:textSize="14dp"
+                    android:hint ="(000)00000-0000"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editTextFONE" />
+            </TableRow>
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textViewCONTATO"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="30px"
+                    android:minHeight="30px"
+                    android:text="Contato:"
+                    android:textSize="14dp" />
+                <EditText
+                    android:inputType= "text"
+                    android:textSize="14dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/editTextCONTATO" />
+
+            </TableRow>
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textViewNACIONALIDADE"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="30px"
+                    android:minHeight="30px"
+                    android:text="Nacionalidade:"
+                    android:textSize="14dp" />
+                <EditText
+                    android:inputType= "text"
+                    android:textSize="14dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/editTextNACIONALIDADE" />
+
+            </TableRow>
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textViewNATURALIDADE"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="30px"
+                    android:minHeight="30px"
+                    android:text="Naturalidade:"
+                    android:textSize="14dp" />
+                <AutoCompleteTextView
+                    android:textSize="14dp"
+                    android:id="@+id/autoCompleteTextViewNaturalidade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:completionThreshold="1" />
+            </TableRow>
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textViewDTCADASTRO"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="30px"
+                    android:minHeight="30px"
+                    android:text="Data Cadastro:"
+                    android:textSize="14dp" />
+                <EditText
+                    android:inputType= "text"
+                    android:textSize="14dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/editTextDTCADASTRO" />
+            </TableRow>
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:text = "Nome PAI:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:minWidth="30px"
+                    android:minHeight="30px"
+                    android:id="@+id/textViewPAI" />
+                <EditText
+                    android:inputType= "text"
+                    android:textSize="14dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/editTextPAI" />
+            </TableRow>
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:text = "CPF PAI:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:minWidth="30px"
+                    android:minHeight="30px"
+                    android:id="@+id/textViewCPFPAI" />
+                <EditText
+                    android:inputType= "text"
+                    android:hint = "000.000.000-00"
+                    android:textSize="14dp"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editTextCPFPAI" />
+            </TableRow>
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:text = "Nome MAE:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:minWidth="30px"
+                    android:minHeight="30px"
+                    android:id="@+id/textViewMAE" />
+                <EditText
+                    android:inputType= "text"
+                    android:textSize="14dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/editTextMAE" />
+            </TableRow>
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:text = "CPF MAE:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:minWidth="30px"
+                    android:minHeight="30px"
+                    android:id="@+id/textViewCPFMAE" />
+                <EditText
+                    android:inputType= "text"
+                    android:textSize="14dp"
+                    android:hint = "000.000.000-00"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editTextCPFMAE" />
+            </TableRow>
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:text = "Email:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:minWidth="30px"
+                    android:minHeight="30px"
+                    android:id="@+id/textViewEmail" />
+                <EditText
+                    android:inputType= "text"
+                    android:textSize="14dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/editTextEmail" />
+            </TableRow>
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:text = "Estado Civil:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:minWidth="30px"
+                    android:minHeight="30px"
+                    android:id="@+id/textViewESTCIVIL" />
+
+                <Spinner
+                    android:id="@+id/spinnerEstadoCivil"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+
+            </TableRow>
+
+            <TextView
+                android:text = "DADOS DO TRABALHO"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minWidth="30px"
+                android:minHeight="30px"
+                android:padding="4dp"
+                android:gravity = "center"
+                android:textSize = "20sp"
+                android:background="#174c83"
+                android:textColor="@android:color/white" />
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:text = "Empresa:"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:minWidth="30px"
+                    android:minHeight="30px"
+                    android:id="@+id/textViewTRAEMPRESA" />
+                <EditText
+                    android:inputType= "text"
+                    android:textSize="14dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/editTextTRAEMPRESA" />
+            </TableRow>
+
+            <Button
+                android:gravity = "center"
+                android:textColor="@android:color/black"
+                android:text="COPIAR ENDERECO RESIDENCIAL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/buttonTraCopiar" />
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+
+                <TextView
+                    android:text = "Endereço:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:minWidth="30px"
+                    android:minHeight="30px"
+                    android:id="@+id/textViewTRAENDERECO" />
+                <EditText
+                    android:inputType= "text"
+                    android:textSize="14dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/editTextTRAENDERECO" />
+            </TableRow>
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:text = "Cidade:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:minWidth="30px"
+                    android:minHeight="30px"
+                    android:id="@+id/textViewTRACIDADE" />
+                <AutoCompleteTextView
+                    android:textSize="14dp"
+                    android:id="@+id/autoCompleteTextViewTraCidade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:completionThreshold="1" />
+            </TableRow>
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:text = "Bairro:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:minWidth="30px"
+                    android:minHeight="30px"
+                    android:id="@+id/textViewTRABAIRRO" />
+                <AutoCompleteTextView
+                    android:textSize="14dp"
+                    android:id="@+id/autoCompleteTextViewTRABairro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:completionThreshold="1" />
+            </TableRow>
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:text = "Cep:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:minWidth="30px"
+                    android:minHeight="30px"
+                    android:id="@+id/textViewTRACEP" />
+                <EditText
+                    android:inputType= "text"
+                    android:textSize="14dp"
+                    android:hint = "00000000"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editTextTRACEP" />
+            </TableRow>
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:text = "Linha Onibus:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:minWidth="30px"
+                    android:minHeight="30px"
+                    android:id="@+id/textViewTRAONIBUSLINHA" />
+                <EditText
+                    android:inputType= "text"
+                    android:textSize="14dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/editTextTRAONIBUSLINHA" />
+            </TableRow>
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:text = "Parada Onibus:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:minWidth="30px"
+                    android:minHeight="30px"
+                    android:id="@+id/textViewTRAONIBUSPARADA" />
+                <EditText
+                    android:inputType= "text"
+                    android:textSize="14dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/editTextTRAONIBUSPARADA" />
+            </TableRow>
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:text = "Ponto Refer.:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:minWidth="30px"
+                    android:minHeight="30px"
+                    android:id="@+id/textViewTRAPONTOREF" />
+                <EditText
+                    android:inputType= "text"
+                    android:textSize="14dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/editTextTRAPONTOREF" />
+            </TableRow>
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:text = "Fone:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:minWidth="30px"
+                    android:minHeight="30px"
+                    android:id="@+id/textViewTRAFONE" />
+                <EditText
+                    android:inputType= "text"
+                    android:hint ="(000)00000-0000"
+                    android:textSize="14dp"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editTextTRAFONE" />
+            </TableRow>
+
+            <TableRow
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:text = "Fone 2:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:minWidth="30px"
+                    android:minHeight="30px"
+                    android:id="@+id/textViewTRAFAX" />
+                <EditText
+                    android:inputType= "text"
+                    android:textSize="14dp"
+                    android:hint ="(000)-00000-0000"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editTextTRAFAX" />
+            </TableRow>
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:text = "Tempo Serv.::"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:minWidth="30px"
+                    android:minHeight="30px"
+                    android:id="@+id/textViewTRATEMPOSERV" />
+                <EditText
+                    android:inputType= "text"
+                    android:textSize="14dp"
+                    android:hint ="00/00/0000"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editTextTRATEMPOSERV" />
+            </TableRow>
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:text = "Função:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:minWidth="30px"
+                    android:minHeight="30px"
+                    android:id="@+id/textViewTRAFUNCAO" />
+                <EditText
+                    android:inputType= "text"
+                    android:textSize="14dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/editTextTRAFUNCAO" />
+            </TableRow>
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:text = "Salario:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:minWidth="30px"
+                    android:minHeight="30px"
+                    android:id="@+id/textViewTRASALARIO" />
+                <EditText
+                    android:inputType= "text"
+                    android:textSize="14dp"
+                    android:hint ="0,00"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editTextTRASALARIO" />
+            </TableRow>
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:text = "Outra Ativ.::"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="30px"
+                    android:minHeight="30px"
+                    android:id="@+id/textViewTRAOUTRAATV" />
+                <EditText
+                    android:inputType= "text"
+                    android:textSize="14dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/editTextTRAOUTRAATV" />
+            </TableRow>
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:text = "Outra Renda:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:minWidth="30px"
+                    android:minHeight="30px"
+                    android:id="@+id/textViewTRAOUTRENDA" />
+                <EditText
+                    android:inputType= "text"
+                    android:textSize="14dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/editTextTRAOUTRENDA" />
+            </TableRow>
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:text = "Fone 3:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:minWidth="30px"
+                    android:minHeight="30px"
+                    android:id="@+id/textViewTRAOUTFONE" />
+                <EditText
+                    android:inputType= "text"
+                    android:textSize="14dp"
+                    android:hint ="(000)00000-0000"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editTextTRAOUTFONE" />
+            </TableRow>
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:text = "Profissão:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:minWidth="30px"
+                    android:minHeight="30px"
+                    android:id="@+id/textViewPROFISSAO" />
+                <EditText
+                    android:inputType= "text"
+                    android:textSize="14dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/editTextPROFISSAO" />
+            </TableRow>
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:text = "CTPS:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:minWidth="30px"
+                    android:minHeight="30px"
+                    android:id="@+id/textViewCTPS" />
+                <EditText
+                    android:inputType= "text"
+                    android:textSize="14dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/editTextCTPS" />
+            </TableRow>
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:text = "CTPS Serie:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:minWidth="30px"
+                    android:minHeight="30px"
+                    android:id="@+id/textViewCTPSSERIE" />
+                <EditText
+                    android:inputType= "text"
+                    android:textSize="14dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/editTextCTPSSERIE" />
+            </TableRow>
+
+            <TextView
+                android:text = "INFORMAÇOES SOBRE CONJUGE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="30px"
+                android:minHeight="30px"
+                android:padding="4dp"
+                android:gravity = "center"
+                android:textSize = "20sp"
+                android:background="#174c83"
+                android:textColor="@android:color/white" />
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:text = "Nome:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:minWidth="30px"
+                    android:minHeight="30px"
+                    android:id="@+id/textViewCONNOME" />
+                <EditText
+                    android:inputType= "text"
+                    android:textSize="14dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/editTextCONNOME" />
+            </TableRow>
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:text = "CPF:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:minWidth="30px"
+                    android:minHeight="30px"
+                    android:id="@+id/textViewCONCPF" />
+                <EditText
+                    android:inputType= "text"
+                    android:textSize="14dp"
+                    android:hint = "000.000.000-00"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editTextCONCPF" />
+            </TableRow>
+
+            <Button
+                android:textColor="@android:color/black"
+                android:text="COPIAR ENDEREÇO RESIDENCIAL"
+                android:gravity = "center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/buttonConCopiar" />
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:text = "Endereço:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:minWidth="30px"
+                    android:minHeight="30px"
+                    android:id="@+id/textViewCONENDERECO" />
+                <EditText
+                    android:inputType= "text"
+                    android:textSize="14dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/editTextCONENDERECO" />
+            </TableRow>
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:text = "Cidade:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:minWidth="30px"
+                    android:minHeight="30px"
+                    android:id="@+id/textViewCONCIDADE" />
+                <AutoCompleteTextView
+                    android:textSize="14dp"
+                    android:id="@+id/autoCompleteTextViewCONCidade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:completionThreshold="1" />
+            </TableRow>
+
+            <TableRow
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:text = "Bairro:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="30px"
+                    android:minHeight="30px"
+                    android:id="@+id/textViewCONBAIRRO" />
+                <AutoCompleteTextView
+                    android:textSize="14dp"
+                    android:id="@+id/autoCompleteTextViewCONBairro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:completionThreshold="1" />
+
+            </TableRow>
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:text = "CEP:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="30px"
+                    android:minHeight="30px"
+                    android:id="@+id/textViewCONCEP" />
+                <EditText
+                    android:inputType= "text"
+                    android:textSize="14dp"
+                    android:hint = "00000000"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editTextCONCEP" />
+            </TableRow>
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:text = "Fone 1:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="30px"
+                    android:minHeight="30px"
+                    android:id="@+id/textViewCONFONE" />
+                <EditText
+                    android:inputType= "text"
+                    android:textSize="14dp"
+                    android:hint ="(000)00000-0000"
+
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editTextCONFONE" />
+            </TableRow>
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:text = "Fone 2:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:minWidth="30px"
+                    android:minHeight="30px"
+                    android:id="@+id/textViewCONFAX" />
+                <EditText
+                    android:inputType= "text"
+                    android:textSize="14dp"
+                    android:hint ="(000)00000-0000"
+
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editTextCONFAX" />
+            </TableRow>
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:text = "Empresa:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:minWidth="30px"
+                    android:minHeight="30px"
+                    android:id="@+id/textViewCONEMPRESA" />
+                <EditText
+                    android:inputType= "text"
+                    android:textSize="14dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/editTextCONEMPRESA" />
+            </TableRow>
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:text = "Tempo Serv.::"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:minWidth="30px"
+                    android:minHeight="30px"
+                    android:id="@+id/textViewCONTEMPOSERV" />
+                <EditText
+                    android:inputType= "text"
+                    android:textSize="14dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/editTextCONTEMPOSERV" />
+            </TableRow>
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:text = "Função:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:minWidth="30px"
+                    android:minHeight="30px"
+                    android:id="@+id/textViewCONFUNCAO" />
+                <EditText
+                    android:inputType= "text"
+                    android:textSize="14dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/editTextCONFUNCAO" />
+            </TableRow>
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:text = "Salário:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:minWidth="30px"
+                    android:minHeight="30px"
+                    android:id="@+id/textViewCONSALARIO" />
+                <EditText
+                    android:inputType= "text"
+                    android:textSize="14dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/editTextCONSALARIO" />
+            </TableRow>
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:text = "Outra Renda:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:minWidth="30px"
+                    android:minHeight="30px"
+                    android:id="@+id/textViewCONOUTRAATV" />
+                <EditText
+                    android:inputType= "text"
+                    android:textSize="14dp"
+                    android:hint ="0,00"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editTextCONOUTRAATV" />
+            </TableRow>
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:text = "Renda Total:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:minWidth="30px"
+                    android:minHeight="30px"
+                    android:id="@+id/textViewCONRENDA" />
+                <EditText
+                    android:inputType= "text"
+                    android:hint ="0,00"
+                    android:textSize="14dp"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editTextCONRENDA" />
+            </TableRow>
+
+            <TextView
+                android:text = "REFERENCIAS PESSOAIS 1"
+                android:gravity = "center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minWidth="30px"
+                android:minHeight="30px"
+                android:padding="4dp"
+                android:textSize = "20sp"
+                android:background="#174c83"
+                android:textColor="@android:color/white" />
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:text = "Nome:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:minWidth="30px"
+                    android:minHeight="30px"
+                    android:id="@+id/textViewREFPES1" />
+                <EditText
+                    android:inputType= "text"
+                    android:textSize="14dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/editTextREFPES1" />
+            </TableRow>
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:text = "Endereço:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:minWidth="30px"
+                    android:minHeight="30px"
+                    android:id="@+id/textViewREFPES1ENDER" />
+                <EditText
+                    android:inputType= "text"
+                    android:textSize="14dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/editTextREFPES1ENDER" />
+            </TableRow>
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:text = "Fone:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:minWidth="30px"
+                    android:minHeight="30px"
+                    android:id="@+id/textViewREFPES1FONE" />
+                <EditText
+                    android:inputType= "text"
+                    android:textSize="14dp"
+                    android:hint ="(000)00000-0000"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editTextREFPES1FONE" />
+            </TableRow>
+
+            <TextView
+                android:text = "REFERENCIAS PESSOAIS 2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity = "center"
+                android:minWidth="30px"
+                android:minHeight="30px"
+                android:padding="4dp"
+                android:textSize = "20sp"
+                android:background="#174c83"
+                android:textColor="@android:color/white"/>
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:text = "Nome:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:minWidth="30px"
+                    android:minHeight="30px"
+                    android:id="@+id/textViewREFPES2" />
+                <EditText
+                    android:inputType= "text"
+                    android:textSize="14dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/editTextREFPES2" />
+            </TableRow>
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:text = "Endereço:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:minWidth="30px"
+                    android:minHeight="30px"
+                    android:id="@+id/textViewREFPES2ENDER" />
+                <EditText
+                    android:inputType= "text"
+                    android:textSize="14dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/editTextREFPES2ENDER" />
+            </TableRow>
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:text = "Fone:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:minWidth="30px"
+                    android:minHeight="30px"
+                    android:id="@+id/textViewREFPES2FONE" />
+                <EditText
+                    android:inputType= "text"
+                    android:hint ="(000)00000-0000"
+                    android:textSize="14dp"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editTextREFPES2FONE" />
+            </TableRow>
+
+            <TextView
+                android:text = "REFERENCIAS COMERCIAIS 1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity = "center"
+                android:minWidth="30px"
+                android:minHeight="30px"
+                android:padding="4dp"
+                android:textSize = "20sp"
+                android:background="#174c83"
+                android:textColor="@android:color/white"
+
+                android:id="@+id/textViewRefComericial1" />
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:text = "Empresa:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:minWidth="30px"
+                    android:minHeight="30px"
+                    android:id="@+id/textViewREFCOM1" />
+                <EditText
+                    android:inputType= "text"
+                    android:textSize="14dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/editTextREFCOM1" />
+            </TableRow>
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:text = "Fone:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:minWidth="30px"
+                    android:minHeight="30px"
+                    android:id="@+id/textViewREFCOM1FONE" />
+                <EditText
+                    android:inputType= "text"
+                    android:hint ="(000)00000-0000"
+                    android:textSize="14dp"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editTextREFCOM1FONE" />
+            </TableRow>
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:text = "Contato:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:minWidth="30px"
+                    android:minHeight="30px"
+                    android:id="@+id/textViewREFCOM1CONT" />
+                <EditText
+                    android:inputType= "text"
+                    android:textSize="14dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/editTextREFCOM1CONT" />
+            </TableRow>
+
+            <TextView
+                android:text = "REFERENCIAS COMERCIAIS 2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minWidth="30px"
+                android:minHeight="30px"
+                android:padding="4dp"
+                android:gravity = "center"
+                android:textSize = "20sp"
+                android:background="#174c83"
+                android:textColor="@android:color/white"
+                android:id="@+id/textViewRefComericial2" />
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:text = "Empresa:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:minWidth="30px"
+                    android:minHeight="30px"
+                    android:id="@+id/textViewREFCOM2" />
+                <EditText
+                    android:inputType= "text"
+                    android:textSize="14dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/editTextREFCOM2" />
+            </TableRow>
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:text = "Fone:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="30px"
+                    android:minHeight="30px"
+                    android:id="@+id/textViewREFCOM2FONE" />
+                <EditText
+                    android:inputType= "text"
+                    android:hint ="(000)00000-0000"
+                    android:textSize="14dp"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editTextREFCOM2FONE" />
+            </TableRow>
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:text = "Contato:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:minWidth="30px"
+                    android:minHeight="30px"
+                    android:id="@+id/textViewREFCOM2CONT" />
+                <EditText
+                    android:inputType= "text"
+                    android:textSize="14dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/editTextREFCOM2CONT" />
+            </TableRow>
+
+            <TextView
+                android:text = "REFERENCIAS BANCARIAS 1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minWidth="30px"
+                android:minHeight="30px"
+                android:padding="4dp"
+                android:textSize = "20sp"
+                android:gravity = "center"
+                android:background="#174c83"
+                android:textColor="@android:color/white"/>
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </TableRow>
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:text = "Conta:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:minWidth="30px"
+                    android:minHeight="30px"
+                    android:id="@+id/textViewRefBan1Conta" />
+                <EditText
+                    android:inputType= "text"
+                    android:textSize="14dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/editTextRefBan1Conta" />
+            </TableRow>
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:text = "Tipo Conta:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:minWidth="30px"
+                    android:minHeight="30px"
+                    android:id="@+id/textViewRefBan1TipoConta" />
+
+                <Spinner
+                    android:id="@+id/spinnerTipoConta1"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:text = "Banco:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:minWidth="30px"
+                    android:minHeight="30px"
+                    android:id="@+id/textViewREFBAN1" />
+                <AutoCompleteTextView
+                    android:textSize="14dp"
+                    android:id="@+id/autoCompleteTextViewREFBAN1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:completionThreshold="1" />
+            </TableRow>
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:text = "Agencia:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:minWidth="30px"
+                    android:minHeight="30px"
+                    android:id="@+id/textViewREFBAN1AGEN" />
+                <EditText
+                    android:inputType= "text"
+                    android:textSize="14dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/editTextREFBAN1AGEN" />
+            </TableRow>
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:text = "Cidade:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:minWidth="30px"
+                    android:minHeight="30px"
+                    android:id="@+id/textViewREFBAN1CIDADE" />
+
+                <AutoCompleteTextView
+                    android:textSize="14dp"
+                    android:id="@+id/autoCompleteTextViewREFBAN1Cidade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:completionThreshold="1" />
+
+            </TableRow>
+
+            <TableRow
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+            </TableRow>
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:text = "Fone:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:minWidth="30px"
+                    android:minHeight="30px"
+                    android:id="@+id/textViewREFBAN1FONE" />
+                <EditText
+                    android:inputType= "text"
+                    android:textSize="14dp"
+                    android:hint = "(000)00000-0000"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editTextREFBAN1FONE" />
+            </TableRow>
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:text = "Contato:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:minWidth="30px"
+                    android:minHeight="30px"
+                    android:id="@+id/textViewREFBAN1CONT" />
+                <EditText
+                    android:inputType= "text"
+                    android:textSize="14dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/editTextREFBAN1CONT" />
+            </TableRow>
+
+            <TextView
+                android:text = "REFERENCIAS BANCARIAS 2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity = "center"
+                android:minWidth="30px"
+                android:minHeight="30px"
+                android:padding="4dp"
+                android:textSize = "20sp"
+                android:background="#174c83"
+                android:textColor="@android:color/white"
+                android:id="@+id/textViewReferenciaBanco" />
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:text = "Conta:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:minWidth="30px"
+                    android:minHeight="30px"
+                    android:id="@+id/textViewRefBan2Conta" />
+                <EditText
+                    android:inputType= "text"
+                    android:textSize="14dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/editTextRefBan2Conta" />
+            </TableRow>
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:text = "Tipo Conta:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:minWidth="30px"
+                    android:minHeight="30px"
+                    android:id="@+id/textViewRefBan2TipoConta" />
+
+                <Spinner
+                    android:id="@+id/spinnerTipoConta2"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:text = "Banco:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:minWidth="30px"
+                    android:minHeight="30px"
+                    android:id="@+id/textViewREFBAN2" />
+                <AutoCompleteTextView
+                    android:textSize="14dp"
+                    android:id="@+id/autoCompleteTextViewREFBAN2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:completionThreshold="1" />
+            </TableRow>
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:text = "Agencia:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:minWidth="30px"
+                    android:minHeight="30px"
+                    android:id="@+id/textViewREFBAN2AGEN" />
+                <EditText
+                    android:inputType= "text"
+                    android:textSize="14dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/editTextREFBAN2AGEN" />
+            </TableRow>
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:text = "Cidade:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:minWidth="30px"
+                    android:minHeight="30px"
+                    android:id="@+id/textViewREFBAN2CIDADE" />
+                <AutoCompleteTextView
+                    android:textSize="14dp"
+                    android:id="@+id/autoCompleteTextViewREFBAN2Cidade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:completionThreshold="1" />
+            </TableRow>
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:text = "Fone:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:minWidth="30px"
+                    android:minHeight="30px"
+                    android:id="@+id/textViewREFBAN2FONE" />
+                <EditText
+                    android:inputType= "text"
+                    android:textSize="14dp"
+                    android:hint = "(000)00000-0000"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editTextREFBAN2FONE" />
+            </TableRow>
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:text = "Contato:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:minWidth="30px"
+                    android:minHeight="30px"
+                    android:id="@+id/textViewREFBAN2CONT" />
+                <EditText
+                    android:inputType= "text"
+                    android:textSize="14dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/editTextREFBAN2CONT" />
+            </TableRow>
+
+
+            <TextView
+                android:text = "DADOS PARA CORRESPONDENCIA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity = "center"
+                android:minWidth="30px"
+                android:minHeight="30px"
+                android:padding="4dp"
+                android:textSize = "20sp"
+                android:background="#174c83"
+                android:textColor="@android:color/white"
+                android:id="@+id/textViewDadosAtividade" />
+
+            <Button
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:text="COPIAR ENDERECO RESIDENCIAL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/buttonCorCopiar" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:text = "Endereço:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:minWidth="30px"
+                    android:minHeight="30px"
+                    android:id="@+id/textViewCORENDER" />
+                <EditText
+                    android:inputType= "text"
+                    android:textSize="14dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/editTextCORENDER" />
+            </TableRow>
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:text = "Cidade:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:minWidth="30px"
+                    android:minHeight="30px"
+                    android:id="@+id/textViewCORCIDADE" />
+                <AutoCompleteTextView
+                    android:textSize="14dp"
+                    android:id="@+id/autoCompleteTextViewCORCidade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:completionThreshold="1" />
+            </TableRow>
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:text = "Bairro:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:minWidth="30px"
+                    android:minHeight="30px"
+                    android:id="@+id/textViewCORBAIRRO" />
+                <AutoCompleteTextView
+                    android:textSize="14dp"
+                    android:id="@+id/autoCompleteTextViewCORBairro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:completionThreshold="1" />
+            </TableRow>
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:text = "CEP:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:minWidth="30px"
+                    android:minHeight="30px"
+                    android:id="@+id/textViewCORCEP" />
+                <EditText
+                    android:inputType= "text"
+                    android:hint = "00000000"
+                    android:textSize="14dp"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editTextCORCEP" />
+            </TableRow>
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:text = "Ponto Refer.:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:minWidth="30px"
+                    android:minHeight="30px"
+                    android:id="@+id/textViewCORPONTOREF" />
+                <EditText
+                    android:inputType= "text"
+                    android:textSize="14dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/editTextCORPONTOREF" />
+            </TableRow>
+
+            <TextView
+                android:text = "DADOS DA ATIVIDADE"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity = "center"
+                android:minWidth="30px"
+                android:minHeight="30px"
+                android:padding="4dp"
+                android:textSize = "20sp"
+                android:background="#174c83"
+                android:textColor="@android:color/white" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:text = "SETOR:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:minWidth="30px"
+                    android:minHeight="30px"
+                    android:id="@+id/textViewSETOR" />
+
+                <Spinner
+                    android:id="@+id/spinnerSETOR"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="14dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp">
+
+                <TextView
+                    android:id="@+id/textViewRAMO"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="30px"
+                    android:minHeight="30px"
+                    android:text="RAMO:"
+                    android:textSize="14dp" />
+
+                <Spinner
+                    android:id="@+id/spinnerRAMO"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="14dp" />
+
+            </TableRow>
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:text = "ATIVIDADE:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:minWidth="30px"
+                    android:minHeight="30px"
+                    android:id="@+id/textViewATIVIDADE" />
+                <AutoCompleteTextView
+                    android:textSize="14dp"
+                    android:id="@+id/autoCompleteTextViewAtividade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:completionThreshold="1" />
+            </TableRow>
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:text = "Nome Fant.:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:minWidth="30px"
+                    android:minHeight="30px"
+                    android:id="@+id/textViewAtivNomeFantasia" />
+                <EditText
+                    android:inputType= "text"
+                    android:textSize="14dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/editTextAtivNomeFantasia" />
+            </TableRow>
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:text = "Razao Social:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:minWidth="30px"
+                    android:minHeight="30px"
+                    android:id="@+id/textViewAtivRazao" />
+                <EditText
+                    android:inputType= "text"
+                    android:textSize="14dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/editTextAtivRazao" />
+            </TableRow>
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:text = "CNPJ:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:minWidth="30px"
+                    android:minHeight="30px"
+                    android:id="@+id/textViewAtivCNPJ" />
+                <EditText
+                    android:inputType= "text"
+                    android:textSize="14dp"
+                    android:hint = "00.000.000.0000/00"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editTextAtivCNPJ" />
+            </TableRow>
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:text = "Pro-Labore:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:minWidth="30px"
+                    android:minHeight="30px"
+                    android:id="@+id/textViewAtivProLabore" />
+                <EditText
+                    android:inputType= "text"
+                    android:textSize="14dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/editTextAtivProLabore" />
+            </TableRow>
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:text = "Tempo Ativ.::"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:minWidth="30px"
+                    android:minHeight="30px"
+                    android:id="@+id/textViewAtivTempo" />
+                <EditText
+                    android:inputType= "text"
+                    android:textSize="14dp"
+                    android:hint = "Informe meses"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editTextAtivTempo" />
+            </TableRow>
+
+            <Button
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:text="COPIAR ENDERECO RESIDENCIAL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/buttonAtivCopiar" />
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:text = "Fone:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:minWidth="30px"
+                    android:minHeight="30px"
+                    android:id="@+id/textViewAtivFone" />
+                <EditText
+                    android:inputType= "text"
+                    android:textSize="14dp"
+                    android:hint = "(000)00000-0000"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editTextAtivFone" />
+            </TableRow>
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:text = "Endereço:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:minWidth="30px"
+                    android:minHeight="30px"
+                    android:id="@+id/textViewAtivEndereco" />
+                <EditText
+                    android:inputType= "text"
+                    android:textSize="14dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/editTextAtivEndereco" />
+            </TableRow>
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:text = "Cidade:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:minWidth="30px"
+                    android:minHeight="30px"
+                    android:id="@+id/textViewAtivCidade" />
+                <AutoCompleteTextView
+                    android:textSize="14dp"
+                    android:id="@+id/autoCompleteTextViewATIVCidade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:completionThreshold="1" />
+
+            </TableRow>
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:text = "Bairro:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:minWidth="30px"
+                    android:minHeight="30px"
+                    android:id="@+id/textViewAtivBairro" />
+                <AutoCompleteTextView
+                    android:textSize="14dp"
+                    android:id="@+id/autoCompleteTextViewATIVBairro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:completionThreshold="1" />
+            </TableRow>
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:text = "Ponto Refer.:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:minWidth="30px"
+                    android:minHeight="30px"
+                    android:id="@+id/textViewAtivPontoReferencia" />
+                <EditText
+                    android:inputType= "text"
+                    android:textSize="14dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/editTextAtivPontoReferencia" />
+            </TableRow>
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:text = "Linha Onibus:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:minWidth="30px"
+                    android:minHeight="30px"
+                    android:id="@+id/textViewAtivLinhaOnibus" />
+                <EditText
+                    android:inputType= "text"
+                    android:textSize="14dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/editTextAtivLinhaOnibus" />
+            </TableRow>
+
+            <TextView
+                android:text = "OUTRAS INFORMAÇÕES"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity = "center"
+                android:minWidth="30px"
+                android:minHeight="30px"
+                android:padding="4dp"
+                android:textSize = "20sp"
+                android:background="#174c83"
+                android:textColor="@android:color/white"
+                android:id="@+id/textViewDadosPessoais" />
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:text = "Como Conheceu o Ceape?:"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:minWidth="30px"
+                    android:minHeight="30px"
+                    android:id="@+id/textViewCOMOCONHECEU" />
+
+                <Spinner
+                    android:id="@+id/spinnerComoConheceu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+            </TableRow>
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:text = "Situação:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:minWidth="30px"
+                    android:minHeight="30px" />
+                <EditText
+                    android:inputType= "text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:layout_weight="1"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:paddingLeft="5dp"
+                    android:id="@+id/editTextSTATUS" />
+            </TableRow>
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:text = "SERASA:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="30px"
+                    android:minHeight="30px" />
+                <EditText
+                    android:inputType= "text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:layout_weight="1"
+                    android:textSize="14dp"
+                    android:paddingLeft="5dp"
+                    android:id="@+id/editTextRegistroSerasa" />
+            </TableRow>
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:text = "SPC:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:minWidth="30px"
+                    android:minHeight="30px" />
+                <EditText
+                    android:inputType= "text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:layout_weight="1"
+                    android:textSize="14dp"
+                    android:paddingLeft="5dp"
+                    android:id="@+id/editTextRegistroSPC" />
+            </TableRow>
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:text = "Atualização:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:minWidth="30px"
+                    android:minHeight="30px" />
+                <EditText
+                    android:inputType= "text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:layout_weight="1"
+                    android:textSize="14dp"
+                    android:paddingLeft="5dp"
+                    android:id="@+id/editTextDataAlteracao" />
+            </TableRow>
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:text = "Registro Obito:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="30px"
+                    android:minHeight="30px" />
+                <EditText
+                    android:inputType= "text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:layout_weight="1"
+                    android:textSize="14dp"
+                    android:paddingLeft="5dp"
+                    android:id="@+id/editTextObitoRegistro" />
+            </TableRow>
+
+            <TableRow
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:text = "Data Obito:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:minWidth="30px"
+                    android:minHeight="30px" />
+
+                <EditText
+                    android:inputType= "text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:layout_weight="1"
+                    android:textSize="14dp"
+                    android:paddingLeft="5dp"
+                    android:id="@+id/editTextObitoData" />
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout></ScrollView>
