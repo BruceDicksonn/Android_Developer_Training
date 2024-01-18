@@ -5,6 +5,7 @@ import androidx.room.PrimaryKey;
 
 import java.io.Serializable;
 
+<<<<<<< HEAD
 
 /**
  * Cada model do seu projeto deverá ser anotada como Entity e deverá obrigatoriamente
@@ -21,6 +22,8 @@ import java.io.Serializable;
  *
  * **/
 
+=======
+>>>>>>> 9444553a902fda8c48b3e4d43916de377ee8138a
 @Entity(tableName = "CadCli0", primaryKeys = {"unidade","codigo"})
 public class Cliente implements Serializable {
 

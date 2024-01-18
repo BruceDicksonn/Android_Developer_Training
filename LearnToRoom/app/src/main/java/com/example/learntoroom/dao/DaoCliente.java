@@ -11,6 +11,7 @@ import androidx.room.Update;
 import com.example.learntoroom.models.Cliente;
 import java.util.ArrayList;
 
+<<<<<<< HEAD
 /**
  * Quando usamos a abordagem do Room, cada DAO do nosso projeto deverá ser criada como interface.
  * Cada método abstrato deverá possuir uma annotation referente a alguma funcionalidade do SQLite.
@@ -21,6 +22,8 @@ import java.util.ArrayList;
  * **/
 
 
+=======
+>>>>>>> 9444553a902fda8c48b3e4d43916de377ee8138a
 @Dao
 public interface DaoCliente {
 
@@ -38,4 +41,8 @@ public interface DaoCliente {
 
     @Query("Select * from CadCli0 where unidade = :unidade and codigo = :codigo")
     Cursor obterCliente(int unidade, int codigo);
+<<<<<<< HEAD
+=======
+
+>>>>>>> 9444553a902fda8c48b3e4d43916de377ee8138a
 }

@@ -9,6 +9,7 @@ import com.example.learntoroom.models.Cliente;
 
 import java.util.ArrayList;
 
+<<<<<<< HEAD
 /**
  *
  * Ao utilizarmos uma camada de repositório, garantimos uma camada a mais entre a controller e a DAO.
@@ -18,6 +19,8 @@ import java.util.ArrayList;
  *
  *
  * **/
+=======
+>>>>>>> 9444553a902fda8c48b3e4d43916de377ee8138a
 public class OfflineClienteRepository implements ClienteRepository {
 
     private DaoCliente daoCliente;
