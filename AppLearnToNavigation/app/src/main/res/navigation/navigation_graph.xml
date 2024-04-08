@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.learntonavigation.ui.views.Login.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_contentMain"
+            app:destination="@id/contentMain" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/contentMain"
+        android:name="com.example.learntonavigation.ContentMain"
+        android:label="fragment_content_main"
+        tools:layout="@layout/fragment_content_main" >
+        <action
+            android:id="@+id/action_contentMain_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.learntonavigation.ui.views.Home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+
+        <action
+            android:id="@+id/action_homeFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+
+        <action
+            android:id="@+id/action_homeFragment_to_movies"
+            app:destination="@id/moviesFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.learntonavigation.ui.views.Settings.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" />
+
+    <fragment
+        android:id="@+id/moviesFragment"
+        android:name="com.example.learntonavigation.ui.views.Movies.MoviesFragment"
+        android:label="fragment_movies"
+        tools:layout="@layout/fragment_movies"/>
+
+
+</navigation>
