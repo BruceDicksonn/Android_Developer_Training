@@ -1,5 +1,8 @@
 package com.example.testesolicitarpermissoes;
 
+import androidx.activity.result.ActivityResultLauncher;
+import androidx.activity.result.contract.ActivityResultContract;
+import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
@@ -18,13 +21,33 @@ import android.provider.Settings;
 import android.util.Log;
 import android.widget.Toast;
 
+import java.util.Arrays;
+import java.util.Map;
+
 public class MainActivity extends AppCompatActivity {
 
     String[] STORAGE_PERMISSIONS = new String[] { Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.READ_EXTERNAL_STORAGE  };
     String[] LOCATION_PERMISSIONS = new String[]{ Manifest.permission.ACCESS_FINE_LOCATION };
     String[] DOCUMENT_PERMISSIONS = new String[]{ Manifest.permission.MANAGE_DOCUMENTS };
 
+    public static String[] ALL_PERMISSIONS = {
+            Manifest.permission.INTERNET,
+            Manifest.permission.ACCESS_NETWORK_STATE,
+            Manifest.permission.READ_PHONE_STATE,
+            Manifest.permission.RECEIVE_BOOT_COMPLETED,
+            Manifest.permission.ACCESS_FINE_LOCATION,
+            Manifest.permission.ACCESS_COARSE_LOCATION ,
+            Manifest.permission.ACCESS_BACKGROUND_LOCATION,
+            Manifest.permission.READ_EXTERNAL_STORAGE,
+            Manifest.permission.WRITE_EXTERNAL_STORAGE,
+            Manifest.permission.MANAGE_EXTERNAL_STORAGE,
+            Manifest.permission.CALL_PHONE,
+            Manifest.permission.MANAGE_DOCUMENTS,
+    };
+
     int REQUEST_CODE = 100;
+
+    private ActivityResultLauncher<String[]> requestPermissionLauncher;
 
     AlertDialog dialog = null;
 
@@ -32,16 +55,34 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        ALL_PERMISSIONS = new String[] { Manifest.permission.ACCESS_BACKGROUND_LOCATION };
+
         dialog = createPermissionsDialog();
+
+
+        requestPermissionLauncher = registerForActivityResult(new ActivityResultContracts.RequestMultiplePermissions(), result -> {
+
+        });
+
+        requestPermissionLauncher.launch(ALL_PERMISSIONS);
+
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+
     }
 
     @Override
     protected void onResume() {
 
-        checkStoragePermissions(this);
-        checkDocumentsPermissions(this);
+        //checkStoragePermissions(this);
+        //checkDocumentsPermissions(this);
 //        boolean checkLocationPerms = checkGpsPermissions(this);
-        boolean checkLocationPerms = true;
+
+        boolean checkLocationPerms = ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED;
 
         if(checkLocationPerms) {
             Toast.makeText(this, "Permissões de localização concedidas", Toast.LENGTH_LONG).show();

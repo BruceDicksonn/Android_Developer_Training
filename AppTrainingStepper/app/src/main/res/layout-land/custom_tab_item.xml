@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/linearTabIcon"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:orientation="vertical"
+        android:layout_marginEnd="16dp"
+        android:gravity="center"
+        android:background="@drawable/circle_shape">
+
+        <ImageView
+            android:id="@+id/stepIcon"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:visibility="gone"
+            android:src="@drawable/icon_check"/>
+
+        <TextView
+            android:id="@+id/labelStep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textSize="24sp"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/labelTabPage"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:text="Tab title"
+        android:textSize="18dp"
+        android:textColor="@color/black"
+        android:layout_marginEnd="18dp"/>
+
+    <View
+        android:id="@+id/tabItemSeparator"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#d6d4d6" />
+
+</LinearLayout>
