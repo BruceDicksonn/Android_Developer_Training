@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">AppLearnToFlavors Premium</string>
+    <string name="main_text">Seja bem-vindo!</string>
+    <string name="main_button">Mais</string>
+    <string name="second_text">Esta é a proxima tela do aplicativo!\nDisponivel apenas para usuarios
+        que baixaram a versão paga!
+    </string>
+</resources>
