@@ -1,0 +1,4 @@
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <external-path name="meus_arquivos" path="Android/data/com.example.appimportarmultiplosarquivos/files/" />
+    <files-path name="arquivos_internos" path="/" />
+</paths>
